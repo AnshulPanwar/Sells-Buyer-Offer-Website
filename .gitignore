@@ -8,6 +8,10 @@
 # dependencies
 /node_modules
 
+#bin files
+
+bin/
+
 # IDEs and editors
 /.idea
 .project

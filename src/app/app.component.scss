@@ -1,0 +1,92 @@
+@import "../../node_modules/@material/layout-grid/_mixins.scss";
+@import "../../node_modules/@material/layout-grid/variables.scss";
+@import "../../node_modules/@material/layout-grid/mdc-layout-grid.scss";
+@import "../../node_modules/@kmx/legos/src/styles/foundation/typography/variables";
+@import "../../node_modules/@kmx/legos/packages/legos-foundation/index.scss";
+
+
+.mdc-select {
+    font-family: Roboto,sans-serif;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-size: 1rem;
+    line-height: 1.75rem;
+    font-weight: 400;
+    letter-spacing: .04em;
+    text-decoration: inherit;
+    text-transform: inherit;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    height: 56px;
+    border: none;
+    border-radius: 4px 4px 0 0;
+    outline: none;
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    cursor: pointer;
+}
+
+
+
+
+
+.mdc-select__surface {
+    font-family: Roboto,sans-serif;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-size: 1rem;
+    line-height: 1.75rem;
+    font-weight: 400;
+    letter-spacing: .04em;
+    text-decoration: inherit;
+    text-transform: inherit;
+    padding-left: 16px;
+    padding-right: 26px;
+    --mdc-ripple-fg-size: 0;
+    --mdc-ripple-left: 0;
+    --mdc-ripple-top: 0;
+    --mdc-ripple-fg-scale: 1;
+    --mdc-ripple-fg-translate-end: 0;
+    --mdc-ripple-fg-translate-start: 0;
+    -webkit-tap-highlight-color: transparent;
+    will-change: transform,opacity;
+    display: flex;
+    position: relative;
+    flex-grow: 1;
+    width: 100%;
+    height: 56px;
+    border: none;
+    border-radius: 4px 4px 0 0;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    overflow: hidden;
+}
+
+
+.mdc-simple-menu {
+    box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+    display: none;
+    position: absolute;
+    box-sizing: border-box;
+    min-width: 170px;
+    max-width: calc(100vw - 32px);
+    max-height: calc(100vh - 32px);
+    margin: 0;
+    padding: 0;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+    border-radius: 2px;
+    background-color: #fff;
+    opacity: 0;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: auto;
+    will-change: transform,opacity;
+    z-index: 4;
+}

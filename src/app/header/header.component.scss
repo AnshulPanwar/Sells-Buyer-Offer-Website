@@ -1,0 +1,77 @@
+
+@import "../../../node_modules/@material/layout-grid/_mixins.scss";
+@import "../../../node_modules/@material/layout-grid/variables.scss";
+@import "../../../node_modules/@material/layout-grid/mdc-layout-grid.scss";
+@import "../../../node_modules/@kmx/legos/src/styles/foundation/typography/variables";
+@import "../../../node_modules/@kmx/legos/packages/legos-foundation/index.scss";
+
+
+
+
+
+
+.offer-web__headerContainer{
+    @include type-headline($color: $kmx-blue-700);
+    min-height: 50px;
+    height: auto;
+    background-color: $kmx-blue-700;
+    min-width: 800px;
+    box-shadow: 0 3px 3px 0 rgba(0,0,0,.14),0 3px 4px 0 rgba(0,0,0,.12),0 1px 8px 0 rgba(0,0,0,.2)!important;
+    width: 50%;
+    font-family: Montserrat,Trebuchet MS,Helvetica,sans-serif;
+
+    .offer-web__header{
+        // border: 1px solid yellow;
+        @include type-body-2($color: $grey-700);
+        height: auto;
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+}
+
+.offer-web__headerTitle{
+    // border: 1px solid red;
+    text-align: left;
+    padding-left: 120px;
+    color: $white;
+    padding-top: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    padding-bottom: 10px;
+    
+}
+
+.offer-web__headerDesc{
+    min-height: 30px;
+    // border: 1px solid yellow;
+    padding-bottom: 5px;
+
+
+}
+
+.offer-web__vinContainer{
+    // border: 1px solid yellow;
+    display: inline-block;
+    color: $white;
+    margin-right: 30px;
+}
+
+.offer-web__MileContainer{
+    // border: 1px solid yellow;
+    display: inline-block;
+    color: $white;
+    margin-right: 30px;
+}
+
+.offer-web__mileEdit{
+    @include kmx-text-hyperlink-core();
+    color: white !important;
+    margin-left: 10px;
+}
+
+.offer-web__sourceContainer{
+    color: $white;
+    display: inline-block;
+    // border: 1px solid yellow;
+}

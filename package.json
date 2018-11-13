@@ -11,6 +11,7 @@
   },
   "private": true,
   "dependencies": {
+    "online-systems-legos": "git+https://9d3f6244fe5e12638e5a03f935e619e30d7fa0c5:x-oauth-basic@github.carmax.com/CarMax/online-systems-legos.git",
     "@angular/animations": "~7.0.0",
     "@angular/common": "~7.0.0",
     "@angular/compiler": "~7.0.0",

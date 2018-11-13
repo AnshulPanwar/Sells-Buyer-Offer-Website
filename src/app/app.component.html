@@ -5,3 +5,32 @@
 [iconLeft]="true" ></enl-list>
 
 
+<br /><br />
+
+<app-header 
+    [carName]="carName"
+    [VIN]="VIN"
+    [Mileage]="Mileage"
+    [source]="source"
+ ></app-header>
+
+ <h1>This is a dropdown prototype:</h1>
+
+ <div class="mdc-select kmx-select" role="listbox">
+        <div class="mdc-select__surface" tabindex="0">
+            <div class="mdc-select__label">
+                Pick a Make
+            </div>
+            <div class="mdc-select__selected-text"></div>
+            <div class="mdc-select__bottom-line"></div>
+        </div>
+        <div class="mdc-simple-menu mdc-select__menu">
+            <ul class="kmx-list mdc-simple-menu__items">
+                <li class="mdc-list-item" role="option" tabindex="0">Acura</li>
+    
+                    … Additional List Items
+    
+                <li class="mdc-list-item" role="option" tabindex="0">Volkswagen</li>
+            </ul>
+        </div>
+    </div>

@@ -1,11 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'sells-buyer-offer-website';
 
   public icon: boolean;
@@ -44,6 +44,30 @@ export class AppComponent {
      "status":"warning"
     }
   ];
+  public headerData = {
+      model: "2015 Nissan Xterra XLE",
+      vin: "4A4AR4AUXFE018903",
+      Mileage: "42,101",
+      Source: "A-lane, 7106"
+  }
+
+  public carName: string;
+  public VIN: string;
+  public Mileage: string;
+  public source: string;
+
+
+  constructor(){}
+
+  ngOnInit(){
+
+    this.carName = this.headerData.model;
+    this.VIN = this.headerData.vin;
+    this.Mileage = this.headerData.Mileage;
+    this.source = this.headerData.Source;
+
+  }
+
 
   
 
